@@ -1,7 +1,7 @@
 ﻿using Autofac;
 using Autofac.Core;
 
-namespace Messerli.CompositionRootBuilder
+namespace Messerli.CompositionRoot
 {
     public sealed class CompositionRootBuilder
     {

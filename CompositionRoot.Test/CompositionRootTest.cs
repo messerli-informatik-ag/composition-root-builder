@@ -1,8 +1,8 @@
 ﻿using Xunit;
 
-namespace Messerli.CompositionRootBuilder.Test
+namespace Messerli.CompositionRoot.Test
 {
-    public sealed class CompositionRootBuilderTest
+    public sealed class CompositionRootTest
     {
         [Fact]
         public void CompositionRootBuilds()
