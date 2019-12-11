@@ -14,7 +14,7 @@
     <PropertyGroup>
         <PackageId>Messerli.CompositionRoot</PackageId>
         <Description>Class library for composing composition root from modules.</Description>
-        <Authors>Jan Nils Ferner, Dominic Groth, Ruben Schmidmeister, Sergio Sutter, Thomas Bruderer</Authors>
+        <Authors>Dominic Groth, Sergio Sutter</Authors>
         <RepositoryUrl>http://github.com/messerli-informatik-ag/composition-root</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <PackageLicenseExpression>MIT OR Apache-2.0</PackageLicenseExpression>
