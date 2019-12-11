@@ -11,5 +11,15 @@
         <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
     </PropertyGroup>
+    <PropertyGroup>
+        <PackageId>Messerli.CompositionRoot</PackageId>
+        <Description>Class library for composition root to compose modules.</Description>
+        <Authors>Jan Nils Ferner, Dominic Groth, Ruben Schmidmeister, Sergio Sutter, Thomas Bruderer</Authors>
+        <RepositoryUrl>http://github.com/messerli-informatik-ag/composition-root</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageLicenseExpression>MIT OR Apache-2.0</PackageLicenseExpression>
+        <Copyright>© Messerli Informatik AG. All rights reserved.</Copyright>
+        <PackageTags>composition root</PackageTags>
+    </PropertyGroup>
     <Import Project="..\.paket\Paket.Restore.targets" />
 </Project>
