@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29418.71
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompositionRootBuilder", "CompositionRootBuilder\CompositionRootBuilder.csproj", "{A142BBE3-170C-4EE5-BAF4-25120E34677B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompositionRoot", "CompositionRoot\CompositionRoot.csproj", "{A142BBE3-170C-4EE5-BAF4-25120E34677B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompositionRootBuilder.Test", "CompositionRootBuilder.Test\CompositionRootBuilder.Test.csproj", "{61728E32-86C9-4142-A5A8-AF0E4B50EE86}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompositionRoot.Test", "CompositionRoot.Test\CompositionRoot.Test.csproj", "{61728E32-86C9-4142-A5A8-AF0E4B50EE86}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

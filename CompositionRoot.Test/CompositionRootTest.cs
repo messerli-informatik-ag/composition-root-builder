@@ -1,13 +1,13 @@
 ﻿using Xunit;
 
-namespace Messerli.CompositionRootBuilder.Test
+namespace Messerli.CompositionRoot.Test
 {
-    public sealed class CompositionRootBuilderTest
+    public sealed class CompositionRootTest
     {
         [Fact]
         public void CompositionRootBuilds()
         {
-            using (var container = new CompositionRootBuilder().Build())
+            using (var container = new CompositionRoot().Build())
             {
                 Assert.NotNull(container);
             }

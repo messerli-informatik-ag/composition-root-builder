@@ -1,20 +1,20 @@
 ﻿using Autofac;
 using Autofac.Core;
 
-namespace Messerli.CompositionRootBuilder
+namespace Messerli.CompositionRoot
 {
-    public sealed class CompositionRootBuilder
+    public sealed class CompositionRoot
     {
         private readonly ContainerBuilder _builder = new ContainerBuilder();
 
-        public CompositionRootBuilder RegisterModule<T>()
+        public CompositionRoot RegisterModule<T>()
             where T : IModule, new()
         {
             _builder.RegisterModule<T>();
             return this;
         }
 
-        public CompositionRootBuilder RegisterModule(IModule module)
+        public CompositionRoot RegisterModule(IModule module)
         {
             _builder.RegisterModule(module);
             return this;
