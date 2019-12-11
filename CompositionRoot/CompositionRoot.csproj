@@ -13,7 +13,7 @@
     </PropertyGroup>
     <PropertyGroup>
         <PackageId>Messerli.CompositionRoot</PackageId>
-        <Description>Class library for composition root to compose modules.</Description>
+        <Description>Class library for composing composition root from modules.</Description>
         <Authors>Jan Nils Ferner, Dominic Groth, Ruben Schmidmeister, Sergio Sutter, Thomas Bruderer</Authors>
         <RepositoryUrl>http://github.com/messerli-informatik-ag/composition-root</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
