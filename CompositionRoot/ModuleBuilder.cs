@@ -6,15 +6,17 @@ namespace Messerli.CompositionRoot
 {
     public sealed class ModuleBuilder
     {
-        private readonly IImmutableList<ModuleRegistrar.Register> _registrations;
+        private readonly ImmutableList<ModuleRegistrar.Register> _registrations;
 
-        private ModuleBuilder(IImmutableList<ModuleRegistrar.Register> registrations)
+        public ModuleBuilder()
+        {
+            _registrations = ImmutableList<ModuleRegistrar.Register>.Empty;
+        }
+
+        private ModuleBuilder(ImmutableList<ModuleRegistrar.Register> registrations)
         {
             _registrations = registrations;
         }
-
-        public static ModuleBuilder Create()
-            => new ModuleBuilder(ImmutableList<ModuleRegistrar.Register>.Empty);
 
         public ModuleBuilder RegisterInstance<T>(T instance)
             where T : class
@@ -32,11 +34,9 @@ namespace Messerli.CompositionRoot
             => ShallowClone(_registrations.Add(registrationFunction));
 
         public IModule Build()
-        {
-            return new ModuleRegistrar(_registrations.ToImmutableList());
-        }
+            => new ModuleRegistrar(_registrations);
 
-        private static ModuleBuilder ShallowClone(IImmutableList<ModuleRegistrar.Register> registrations)
+        private static ModuleBuilder ShallowClone(ImmutableList<ModuleRegistrar.Register> registrations)
             => new ModuleBuilder(registrations);
     }
 }
