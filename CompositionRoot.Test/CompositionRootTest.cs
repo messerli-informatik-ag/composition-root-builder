@@ -7,7 +7,7 @@ namespace Messerli.CompositionRoot.Test
         [Fact]
         public void CompositionRootBuilds()
         {
-            using (var container = new CompositionRootBuilder().Build())
+            using (var container = new CompositionRootBuilder().RegisterModule(ModuleBuilder.Create().Build()).Build())
             {
                 Assert.NotNull(container);
             }
