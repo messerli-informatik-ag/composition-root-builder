@@ -15,8 +15,6 @@ namespace Messerli.CompositionRoot
         public delegate void Register(ContainerBuilder builder);
 
         protected override void Load(ContainerBuilder builder)
-        {
-            _mockRegistrations.ForEach(registration => registration(builder));
-        }
+            => _mockRegistrations.ForEach(registration => registration(builder));
     }
 }
