@@ -9,7 +9,7 @@ namespace Messerli.CompositionRoot.Test
     public class ModuleBuilderTest
     {
         [Fact]
-        public void CanEmptyModuleBuilds()
+        public void CanBuildEmptyModule()
         {
             Assert.NotNull(new ModuleBuilder().Build());
         }
