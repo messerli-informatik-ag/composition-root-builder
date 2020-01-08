@@ -3,7 +3,7 @@ using Autofac;
 
 namespace Messerli.CompositionRoot
 {
-    public class ModuleRegistrar : Module
+    public sealed class ModuleRegistrar : Module
     {
         private readonly ImmutableList<Register> _registrations;
 
