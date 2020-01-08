@@ -6,3 +6,4 @@ nuget Autofac ~> 4.8
 nuget Microsoft.NET.Test.Sdk ~> 15.9
 nuget xunit ~> 2.4
 nuget xunit.runner.visualstudio ~> 2.4
+nuget System.Collections.Immutable ~> 1.6.0
