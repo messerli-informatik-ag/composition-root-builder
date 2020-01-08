@@ -5,16 +5,16 @@ namespace Messerli.CompositionRoot
 {
     public class ModuleRegistrar : Module
     {
-        private readonly ImmutableList<Register> _mockRegistrations;
+        private readonly ImmutableList<Register> _registrations;
 
         public ModuleRegistrar(ImmutableList<Register> mockRegistrations)
         {
-            _mockRegistrations = mockRegistrations;
+            _registrations = mockRegistrations;
         }
 
         public delegate void Register(ContainerBuilder builder);
 
         protected override void Load(ContainerBuilder builder)
-            => _mockRegistrations.ForEach(registration => registration(builder));
+            => _registrations.ForEach(registration => registration(builder));
     }
 }
