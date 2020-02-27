@@ -10,35 +10,29 @@ namespace Messerli.CompositionRoot.Test
         [Fact]
         public void CompositionRootBuilds()
         {
-            using (var container = new CompositionRootBuilder().Build())
-            {
-                Assert.NotNull(container);
-            }
+            using var container = new CompositionRootBuilder().Build();
+            Assert.NotNull(container);
         }
 
         [Fact]
         public void CreateCompositionRootWithRegisteredModules()
         {
-            using (var container = new CompositionRootBuilder()
+            using var container = new CompositionRootBuilder()
                 .RegisterModule(new FooModule())
                 .RegisterModule<BarModule>()
-                .Build())
-            {
-                Assert.NotNull(container.Resolve<IFoo>());
-                Assert.NotNull(container.Resolve<IBar>());
-            }
+                .Build();
+            Assert.NotNull(container.Resolve<IFoo>());
+            Assert.NotNull(container.Resolve<IBar>());
         }
 
         [Fact]
         public void ThrowsOnComponentNotRegistered()
         {
-            using (var container = new CompositionRootBuilder()
+            using var container = new CompositionRootBuilder()
                 .RegisterModule(new FooModule())
-                .Build())
-            {
-                Assert.NotNull(container.Resolve<IFoo>());
-                Assert.Throws<ComponentNotRegisteredException>(() => container.Resolve<IBar>());
-            }
+                .Build();
+            Assert.NotNull(container.Resolve<IFoo>());
+            Assert.Throws<ComponentNotRegisteredException>(() => container.Resolve<IBar>());
         }
     }
 }
