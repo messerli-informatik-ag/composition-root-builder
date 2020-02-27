@@ -2,7 +2,7 @@ framework auto-detect
 
 source https://api.nuget.org/v3/index.json
 
-nuget Autofac ~> 4.8
+nuget Autofac ~> 5.1
 nuget Microsoft.NET.Test.Sdk ~> 15.9
 nuget xunit ~> 2.4
 nuget xunit.runner.visualstudio ~> 2.4
