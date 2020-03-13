@@ -21,5 +21,8 @@
         <Copyright>© Messerli Informatik AG. All rights reserved.</Copyright>
         <PackageTags>composition root</PackageTags>
     </PropertyGroup>
-    <Import Project="..\.paket\Paket.Restore.targets" />
+    <ItemGroup>
+        <PackageReference Include="Autofac" />
+        <PackageReference Include="System.Collections.Immutable" />
+    </ItemGroup>
 </Project>
