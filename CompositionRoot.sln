@@ -10,10 +10,15 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{560F9951-90AD-4C89-B6E0-4593967B52F4}"
 	ProjectSection(SolutionItems) = preProject
 		changelog.md = changelog.md
-		Directory.Build.props = Directory.Build.props
-		paket.dependencies = paket.dependencies
 		readme.md = readme.md
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build Config", "Build Config", "{9E15C804-BB58-4D17-881B-6B47EC2B03C5}"
+ProjectSection(SolutionItems) = preProject
+	Directory.Build.props = Directory.Build.props
+	global.json = global.json
+	Packages.props = Packages.props
+EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

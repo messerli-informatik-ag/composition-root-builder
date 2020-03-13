@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk; Microsoft.Build.CentralPackageVersions">
     <PropertyGroup>
         <Version>0.2.0</Version>
         <AssemblyName>Messerli.CompositionRoot</AssemblyName>
@@ -15,11 +15,14 @@
     <PropertyGroup>
         <PackageId>Messerli.CompositionRoot</PackageId>
         <Description>Class library for composing composition root from modules.</Description>
-        <RepositoryUrl>http://github.com/messerli-informatik-ag/composition-root</RepositoryUrl>
+        <RepositoryUrl>https://github.com/messerli-informatik-ag/composition-root</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <PackageLicenseExpression>MIT OR Apache-2.0</PackageLicenseExpression>
         <Copyright>© Messerli Informatik AG. All rights reserved.</Copyright>
         <PackageTags>composition root</PackageTags>
     </PropertyGroup>
-    <Import Project="..\.paket\Paket.Restore.targets" />
+    <ItemGroup>
+        <PackageReference Include="Autofac" />
+        <PackageReference Include="System.Collections.Immutable" />
+    </ItemGroup>
 </Project>
