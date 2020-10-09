@@ -1,4 +1,4 @@
-﻿using Messerli.CompositionRoot.Test.Stubs;
+using Messerli.CompositionRoot.Test.Stubs;
 
 namespace Messerli.CompositionRoot.Test.Stubs
 {

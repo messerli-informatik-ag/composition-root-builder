@@ -1,4 +1,4 @@
-﻿namespace Messerli.CompositionRoot.Test.Stubs
+namespace Messerli.CompositionRoot.Test.Stubs
 {
     internal interface IBar
     {
