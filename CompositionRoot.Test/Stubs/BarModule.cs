@@ -1,4 +1,4 @@
-﻿using Autofac;
+using Autofac;
 using Messerli.CompositionRoot.Test.Stubs;
 
 namespace Messerli.CompositionRoot.Test.Stubs
