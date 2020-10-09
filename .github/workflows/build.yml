@@ -1,5 +1,8 @@
 name: Build
 
+env:
+  DOTNET_NOLOGO: 1
+
 on:
   push:
     branches: [ master ]
@@ -9,11 +12,14 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        autofac: ['lowestSupported', '6.0.0']
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-dotnet@v1
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore -property:AutofacVersion=${{matrix.autofac}}
     - name: Build
       run: dotnet build --no-restore
     - name: Run Tests
