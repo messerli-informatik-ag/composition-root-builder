@@ -25,4 +25,7 @@
         <PackageReference Include="Autofac" />
         <PackageReference Include="System.Collections.Immutable" />
     </ItemGroup>
+    <Target Name="PrintAutofacVersion" BeforeTargets="_GenerateRestoreProjectSpec">
+        <Message Importance="high" Text="Using %(PackageReference.Identity) Version %(PackageReference.Version)" Condition="'%(PackageReference.Identity)' == 'Autofac'" />
+    </Target>
 </Project>
