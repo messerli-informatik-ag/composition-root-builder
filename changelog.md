@@ -10,5 +10,5 @@
 - Update Autofac to 5.1.
 - Add support for .NET Standard 2.0.
 
-## Unreleased
+## 0.2.1
 * Add compatibility for Autofac 6.x.
