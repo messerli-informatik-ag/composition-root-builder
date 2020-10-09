@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<ItemGroup>
-		<PackageReference Update="Autofac" Version="[5.1.2, 6)" />
+		<PackageReference Update="Autofac" Version="[5.1.2, 7)" />
 		<PackageReference Update="Microsoft.NET.Test.Sdk" Version="[15.9.2, 16)" />
 		<PackageReference Update="System.Collections.Immutable" Version="[1.6, 2)" />
 		<PackageReference Update="xunit" Version="[2.4.1, 3)" />
