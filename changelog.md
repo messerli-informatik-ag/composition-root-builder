@@ -12,3 +12,4 @@
 
 ## 0.2.1
 * Add compatibility for Autofac 6.x.
+* Only depend on `System.Collections.Immutable` when targeting .NET Standard.
