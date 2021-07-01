@@ -14,5 +14,7 @@
 * Add compatibility for Autofac 6.x.
 * Only depend on `System.Collections.Immutable` when targeting .NET Standard.
 
-## 0.2.2
+## 1.0.0
 * Remove upper constraint on `System.Collections.Immutable`
+* Add symbols package
+* Add `[Pure]` attributes to pure builder methods
