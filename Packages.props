@@ -3,7 +3,7 @@
 	<ItemGroup Label="Runtime Dependencies">
 		<PackageReference Update="Autofac" Version="$(AutofacVersion)" />
 		<PackageReference Update="Autofac" Version="[5.1.2, 7)" Condition="'$(AutofacVersion)' == '' Or '$(AutofacVersion)' == 'lowestSupported'" />
-		<PackageReference Update="System.Collections.Immutable" Version="[1.6, 6)" />
+		<PackageReference Update="System.Collections.Immutable" Version="1.6" />
 	</ItemGroup>
 	<ItemGroup Label="Build Dependencies">
 		<PackageReference Update="Messerli.CodeStyle" Version="[1.2.1, 2)" />
