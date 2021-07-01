@@ -1,4 +1,5 @@
 using System.Collections.Immutable;
+using System.Diagnostics.Contracts;
 using Autofac;
 using Autofac.Core;
 
@@ -13,23 +14,27 @@ namespace Messerli.CompositionRoot
 
         private ModuleBuilder(ImmutableList<Register> registrations)
             => _registrations = registrations;
-        }
 
+        [Pure]
         public ModuleBuilder RegisterInstance<T>(T instance)
             where T : class
             => Register(builder => builder.RegisterInstance(instance));
 
+        [Pure]
         public ModuleBuilder RegisterModule<TModule>()
             where TModule : IModule, new()
             => Register(builder => builder.RegisterModule<TModule>());
 
+        [Pure]
         public ModuleBuilder RegisterModule<TModule>(TModule module)
             where TModule : IModule
             => Register(builder => builder.RegisterModule(module));
 
+        [Pure]
         public ModuleBuilder Register(Register registrationFunction)
             => ShallowClone(_registrations.Add(registrationFunction));
 
+        [Pure]
         public IModule Build()
             => new ModuleRegistrar(_registrations);
 
