@@ -9,13 +9,10 @@ namespace Messerli.CompositionRoot
         private readonly ImmutableList<Register> _registrations;
 
         public ModuleBuilder()
-        {
-            _registrations = ImmutableList<Register>.Empty;
-        }
+            => _registrations = ImmutableList<Register>.Empty;
 
         private ModuleBuilder(ImmutableList<Register> registrations)
-        {
-            _registrations = registrations;
+            => _registrations = registrations;
         }
 
         public ModuleBuilder RegisterInstance<T>(T instance)
