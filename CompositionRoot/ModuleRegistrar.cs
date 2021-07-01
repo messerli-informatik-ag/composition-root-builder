@@ -10,9 +10,7 @@ namespace Messerli.CompositionRoot
         private readonly ImmutableList<Register> _registrations;
 
         public ModuleRegistrar(ImmutableList<Register> mockRegistrations)
-        {
-            _registrations = mockRegistrations;
-        }
+            => _registrations = mockRegistrations;
 
         protected override void Load(ContainerBuilder builder)
             => _registrations.ForEach(registration => registration(builder));

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk; Microsoft.Build.CentralPackageVersions">
     <PropertyGroup>
-        <Version>0.2.2</Version>
+        <Version>1.0.0</Version>
         <AssemblyName>Messerli.CompositionRoot</AssemblyName>
         <RootNamespace>Messerli.CompositionRoot</RootNamespace>
     </PropertyGroup>
@@ -20,6 +20,11 @@
         <PackageLicenseExpression>MIT OR Apache-2.0</PackageLicenseExpression>
         <Copyright>© Messerli Informatik AG. All rights reserved.</Copyright>
         <PackageTags>composition root</PackageTags>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    </PropertyGroup>
+    <PropertyGroup>
+        <DefineConstants>$(DefineConstants);CONTRACTS_FULL</DefineConstants>
     </PropertyGroup>
     <ItemGroup>
         <PackageReference Include="Autofac" />

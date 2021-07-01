@@ -21,8 +21,6 @@ namespace Messerli.CompositionRoot
         }
 
         public IContainer Build()
-        {
-            return _builder.Build();
-        }
+            => _builder.Build();
     }
 }
