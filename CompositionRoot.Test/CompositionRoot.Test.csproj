@@ -10,8 +10,6 @@
         <LangVersion>8.0</LangVersion>
         <Nullable>enable</Nullable>
         <NullableContextOptions>enable</NullableContextOptions>
-        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-        <GenerateDocumentationFile>true</GenerateDocumentationFile>
     </PropertyGroup>
     <ItemGroup>
         <ProjectReference Include="..\CompositionRoot\CompositionRoot.csproj" />
