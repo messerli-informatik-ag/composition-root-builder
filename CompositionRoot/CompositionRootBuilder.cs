@@ -5,7 +5,7 @@ namespace Messerli.CompositionRoot
 {
     public sealed class CompositionRootBuilder
     {
-        private readonly ContainerBuilder _builder = new ContainerBuilder();
+        private readonly ContainerBuilder _builder = new();
 
         public CompositionRootBuilder RegisterModule<T>()
             where T : IModule, new()

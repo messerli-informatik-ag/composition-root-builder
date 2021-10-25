@@ -38,7 +38,6 @@ namespace Messerli.CompositionRoot
         public IModule Build()
             => new ModuleRegistrar(_registrations);
 
-        private static ModuleBuilder ShallowClone(ImmutableList<Register> registrations)
-            => new ModuleBuilder(registrations);
+        private static ModuleBuilder ShallowClone(ImmutableList<Register> registrations) => new(registrations);
     }
 }

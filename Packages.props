@@ -6,7 +6,7 @@
 		<PackageReference Update="System.Collections.Immutable" Version="1.6" />
 	</ItemGroup>
 	<ItemGroup Label="Build Dependencies">
-		<PackageReference Update="Messerli.CodeStyle" Version="[1.2.1, 2)" />
+		<PackageReference Update="Messerli.CodeStyle" Version="2.1.1" />
 	</ItemGroup>
 	<ItemGroup Label="Test Dependencies">
 		<PackageReference Update="Microsoft.NET.Test.Sdk" Version="[15.9.2, 16)" />
