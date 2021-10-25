@@ -18,3 +18,7 @@
 * Remove upper constraint on `System.Collections.Immutable`
 * Add symbols package
 * Add `[Pure]` attributes to pure builder methods
+
+## 1.1.0
+* Add a new `Configure` method on `CompositionRootBuilder` that allows
+  arbitrary setup code to run on the underlying `ContainerBuilder`.
