@@ -1,3 +1,4 @@
+using System;
 using Autofac;
 using Autofac.Core;
 
@@ -15,8 +16,11 @@ namespace Messerli.CompositionRoot
         }
 
         public CompositionRootBuilder RegisterModule(IModule module)
+            => Configure(builder => builder.RegisterModule(module));
+
+        public CompositionRootBuilder Configure(Action<ContainerBuilder> configureAction)
         {
-            _builder.RegisterModule(module);
+            configureAction(_builder);
             return this;
         }
 
