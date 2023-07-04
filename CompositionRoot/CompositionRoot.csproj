@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk; Microsoft.Build.CentralPackageVersions">
     <PropertyGroup>
-        <Version>1.1.0</Version>
+        <Version>1.1.1</Version>
         <AssemblyName>Messerli.CompositionRoot</AssemblyName>
         <RootNamespace>Messerli.CompositionRoot</RootNamespace>
     </PropertyGroup>
@@ -15,8 +15,6 @@
         <Description>Class library for composing composition root from modules.</Description>
         <RepositoryUrl>https://github.com/messerli-informatik-ag/composition-root</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
-        <PackageLicenseExpression>MIT OR Apache-2.0</PackageLicenseExpression>
-        <Copyright>© Messerli Informatik AG. All rights reserved.</Copyright>
         <PackageTags>composition root</PackageTags>
         <IncludeSymbols>true</IncludeSymbols>
         <SymbolPackageFormat>snupkg</SymbolPackageFormat>
