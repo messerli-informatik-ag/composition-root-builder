@@ -22,3 +22,8 @@
 ## 1.1.0
 * Add a new `Configure` method on `CompositionRootBuilder` that allows
   arbitrary setup code to run on the underlying `ContainerBuilder`.
+
+## 1.1.2
+* Add `TargetFramework` `net8.0`.
+* Remove `TargetFramework` `netcoreapp3.1`.
+* Update `Autofac` to `7.1.0`.
