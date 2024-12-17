@@ -27,3 +27,6 @@
 * Add `TargetFramework` `net8.0`.
 * Remove `TargetFramework` `netcoreapp3.1`.
 * Update `Autofac` to `7.1.0`.
+
+# 1.2.0
+* Update `Autofac` dependency to `8.x`.
