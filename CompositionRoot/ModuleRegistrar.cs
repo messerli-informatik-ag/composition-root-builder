@@ -1,18 +1,12 @@
 using System.Collections.Immutable;
 using Autofac;
 
-namespace Messerli.CompositionRoot
+namespace Messerli.CompositionRoot;
+
+public delegate void Register(ContainerBuilder builder);
+
+internal sealed class ModuleRegistrar(ImmutableList<Register> mockRegistrations) : Module
 {
-    public delegate void Register(ContainerBuilder builder);
-
-    internal sealed class ModuleRegistrar : Module
-    {
-        private readonly ImmutableList<Register> _registrations;
-
-        public ModuleRegistrar(ImmutableList<Register> mockRegistrations)
-            => _registrations = mockRegistrations;
-
-        protected override void Load(ContainerBuilder builder)
-            => _registrations.ForEach(registration => registration(builder));
-    }
+    protected override void Load(ContainerBuilder builder)
+        => mockRegistrations.ForEach(registration => registration(builder));
 }
