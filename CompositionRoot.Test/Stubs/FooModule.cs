@@ -1,12 +1,11 @@
 using Autofac;
 
-namespace Messerli.CompositionRoot.Test.Stubs
+namespace Messerli.CompositionRoot.Test.Stubs;
+
+internal sealed class FooModule : Module
 {
-    internal sealed class FooModule : Module
+    protected override void Load(ContainerBuilder builder)
     {
-        protected override void Load(ContainerBuilder builder)
-        {
-            builder.RegisterType<Foo>().As<IFoo>();
-        }
+        builder.RegisterType<Foo>().As<IFoo>();
     }
 }
